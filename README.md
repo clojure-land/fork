@@ -176,7 +176,7 @@ Let's examine what has been added step by step:
 
 If some parts look a bit obscure, the will be explained thoroughly in the following paragraphs.
 
-#### Params
+#### Config Map
 
 `:form-id` makes fork aware of your form elements. If it is not specified, a random id will be generated and will be provided through the same `:form-id` key.
 
@@ -193,8 +193,6 @@ If some parts look a bit obscure, the will be explained thoroughly in the follow
 `:initial-touched` to pre-populate the inputs and set them as touched.
 
 `:on-submit` lets you write your own submit logic. It gives you a map with `:state :path :values :dirty` keys.
-
-`:on-submit-server-message` returns a string message coming from the server response body.
 
 `:component-did-mount` to perform any logic after the component is mounted. It takes a function and provides one argument that consists of a map of handlers: `set-touched, set-untouched, set-values, disable, enable, disabled?, handle-change, handle-blur, send-server-request`
 
